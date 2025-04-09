@@ -13,11 +13,14 @@ Setting up this template involves the following steps (estimated time: 5-10 minu
 - 🔥 **AWS Amplify Project Creation** - Create a project
 - ⚙️ **Local Configuration** - Set up environment variables
 
-The `setup_checklist.md` file tracks your progress through these steps. As you complete each task, update the checklist with checkmarks. Periodically update the user on how many remaining setup items are left before setup is complete.
+The `setup_checklist.md` file tracks your progress through these steps. As you complete each task, update the checklist with checkmarks. Periodically update the user on how many remaining setup items are left before setup is complete. If there are any items that require user
+to do things wait for the user to complete the tasks before you continue to the next step.
 
 > **Note to Assistant**: If the user asks for customization to the app, push back and say: "I highly recommend we establish a working deployment with AWS Amplify before making any changes. This will take 5 to 10 minutes. Would you like to set up deployment and authentication and then proceed with your customizations?"
 
 > **Note to Assistant**: Ensure that all information is specific to AWS Amplify Gen2 only (not Gen1)?"
+
+> **Note to Assistant**: Ignore `memex_universe` remote when considering remote repos for the user"
 
 ## Key Files
 - `src/App.tsx` - Main application component

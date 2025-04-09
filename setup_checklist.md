@@ -4,7 +4,7 @@ Follow these steps to set up your AWS Amplify web application
 
 ## 1. AWS Account Setup
 - [ ] Check if user has AWS Account and if not ask `user` to [Create AWS Account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html)
-- [ ] Install AWS CLI: `brew install awscli` or follow instructions [here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) for your operating system
+- [ ] Check if AWS CLI is available `aws --version` and if not install AWS CLI: `brew install awscli` or follow instructions [here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) for your operating system
 
 ## 2. AWS Amplify Setup
 - [ ] Ask `user` to setup new github repo
