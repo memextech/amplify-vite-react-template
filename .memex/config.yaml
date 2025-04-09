@@ -12,18 +12,18 @@ features:
 getting_started_screen: false
 getting_started_screen_index: 0
 git:
-  branch: null
-  remote: null
-  url: ''
-hero_image: ''
+  branch: main
+  remote: origin
+  url: https://github.com/memextech/amplify-vite-react-template
+hero_image: https://raw.githubusercontent.com/memextech/amplify-vite-react-template/main/public/images/hero-image.png
 icon: ''
-is_published: false
+is_published: true
 pills:
-- icon: ''
-  label: ''
-  prompt: ''
+- icon: Rocket
+  label: Setup & Deployment
+  prompt: Guide me through the setup and deployment
 project_id: 7zV87U6a4LWU9yH7bFzF
-published_at: null
+published_at: 2025-04-09 16:00:31.226000
 requirements:
 - description: ''
   type: ''
@@ -40,4 +40,4 @@ tools:
   role: ''
   type: ''
   version: ''
-updated_at: 2025-04-09 15:54:18.021000
+updated_at: 2025-04-09 16:14:29.847000
