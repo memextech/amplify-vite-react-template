@@ -11,8 +11,10 @@ Follow these steps to set up your AWS Amplify web application
 - [ ] Push current repo to that remote
 - [ ] Ask `user` to open [this](https://eu-west-2.console.aws.amazon.com/amplify/create/add-repo) page to setup AWS Amplify with the new github repository
 - [ ] After deployment is completed ask `user` to download `amplify_outputs.json` to local repository from 'Deployments / Deployed backend resources' page. Click on Deployment to get to that screen.
+- [ ] Run `npm install` to complete setup
+- [ ] Run `npm run dev` to test the application
 
-## 3. Configure Sandbox for local development
+## 3. [Optional] Configure Sandbox for local backend development
 - [ ] Check if user has default AWS profile setup in `~/.aws/config` if no follow the instructions below
 - [ ] Follow the instructions in [this]((https://docs.amplify.aws/react/start/account-setup/)) guide 1 step at a time asking `user` to complete each step
 - [ ] Set up Identity Center
@@ -28,11 +30,11 @@ Follow these steps to set up your AWS Amplify web application
      | Default client Region [us-east-1]: - User AWS account region
      | CLI default output format (json if not specified) [json]: <leave blank>
      | Profile name [amplify-policy-<your-account>]: - IMPORTANT to use `default` as profile name
-- [ ] Bootstrap your AWS account. Ask user to run `npx ampx sandbox` and confirm all is good.
+- [ ] Bootstrap your AWS account. Ask `user` to run `npx ampx sandbox` and confirm all is good.
 
 ## 4. Local Development
 - [ ] Ensure Node.js v22 is installed
-- [ ] Start AWS Amplify backend sandbox using interactive terminal `npx ampx sandbox`
+- [ ] Start AWS Amplify backend sandbox using interactive terminal `npx ampx sandbox` (when optional sandbox is configured)
 - [ ] Start development frontend application using interactive terminal `npm run dev`
 - [ ] Test the application at http://localhost:5173
 
