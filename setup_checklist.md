@@ -10,11 +10,16 @@ Follow these steps to set up your AWS Amplify web application
 - [ ] Ask `user` to setup new github repo
 - [ ] Push current repo to that remote
 - [ ] Ask `user` to open [this](https://eu-west-2.console.aws.amazon.com/amplify/create/add-repo) page to setup AWS Amplify with the new github repository
-- [ ] After deployment is completed ask `user` to download `amplify_outputs.json` to local repository
+- [ ] After deployment is completed ask `user` to download `amplify_outputs.json` to local repository from 'Deployments / Deployed backend resources' page. Click on Deployment to get to that screen.
 
 ## 3. Configure Sandbox for local development
-- [ ] Follow the instructions [here](https://docs.amplify.aws/react/start/account-setup/) 1 step at a time asking `user` to complete the steps
-  - [ ] In Step 4 `aws configure sso` use the info here to guide user how to fill in the required information
+- [ ] Check if user has default AWS profile setup in `~/.aws/config` if no follow the instructions below
+- [ ] Follow the instructions in [this]((https://docs.amplify.aws/react/start/account-setup/)) guide 1 step at a time asking `user` to complete each step
+- [ ] Set up Identity Center
+- [ ] Create user with Amplify permissions
+- [ ] Create password for user
+- [ ] Set up local AWS profile
+    Use this info to guide user how to fill in the required information in this step
      | Choose Enable with AWS Organizations
      | SSO session name (Recommended): amplify-admin
      | SSO start URL: <START SESSION URL> - take this from `IAM Identity Center page` (eg: https://<your-company>.awsapps.com/start), can be renamed to user specific domain
@@ -23,6 +28,7 @@ Follow these steps to set up your AWS Amplify web application
      | Default client Region [us-east-1]: - User AWS account region
      | CLI default output format (json if not specified) [json]: <leave blank>
      | Profile name [amplify-policy-<your-account>]: - IMPORTANT to use `default` as profile name
+- [ ] Bootstrap your AWS account. Ask user to run `npx ampx sandbox` and confirm all is good.
 
 ## 4. Local Development
 - [ ] Ensure Node.js v22 is installed
